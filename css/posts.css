@@ -140,3 +140,19 @@
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 750px) {
+    .posts .post {
+        height: 210px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .posts .post {
+        height: 260px;
+    }
+
+    .posts .post .txt h2 {
+        font-size: 18px;
+    }
+}
