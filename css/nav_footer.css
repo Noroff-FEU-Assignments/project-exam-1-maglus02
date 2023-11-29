@@ -157,14 +157,24 @@ footer  {
         display: flex;
     }
 
-    .nav .ul {
-        position: fixed;
-        transform: translateY(-200%);
+    header #logo {
+        flex-grow: 2;
+        padding-left: 20px;
+    }
+
+    header {
+        padding-left: 0;
+    }
+
+    header .nav {
+        position: absolute;
         width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        margin: 0px;
+    }
+
+    .nav .ul {
+        position: absolute;
+        transform: translateY(-200%);
         background: var(--secondary);
         color: white;
         z-index: 20;
