@@ -269,6 +269,13 @@
         display: none;
     }
 
+    .featured .content {
+        display: flex;
+        gap: 20px;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
     .featured .content .left .post {
         height: auto;
         width: 100%;

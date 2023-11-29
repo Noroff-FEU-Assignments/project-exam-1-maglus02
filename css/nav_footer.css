@@ -104,6 +104,8 @@ footer {
     color: var(--tertiary);
     margin: 20px 0px;
     border-radius: 9px;
+    box-sizing: border-box;
+    position: relative;
 }
 
 footer #rights {
@@ -215,7 +217,7 @@ footer  {
 
     footer #rights {
         width: 100%;
-        order: 3;
+        order: 0;
     }
 
     footer #rights p {
@@ -235,8 +237,6 @@ footer  {
     }
 
     footer #social-media {
-        width: 100%;
-        font-size: 30px;
         position: absolute;
         right: 0;
         bottom: 0;
