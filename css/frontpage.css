@@ -237,6 +237,7 @@
 .hero .content h1,
 .hero .content h3,
 .latest .carousel .carousel-container .card h2, .latest .carousel .arrow-prev, .latest .carousel .arrow-next, .latest .carousel button {
+    -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
 }
 
@@ -263,8 +264,18 @@
     .featured .content .right,
     .latest .carousel .arrow-prev,
     .latest .carousel .arrow-next,
-    .latest .carousel .carousel-pag {
+    .latest .carousel .carousel-pag,
+    .featured .content .left .post img {
         display: none;
+    }
+
+    .featured .content .left .post {
+        height: auto;
+        width: 100%;
+    }
+
+    .featured .content .left .post .txt {
+        width: 100%;
     }
 
     .latest .carousel .carousel-container {
