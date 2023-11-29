@@ -1,0 +1,289 @@
+.hero {
+    margin: 80px 0px;
+}
+
+.hero .content {
+    color: var(--primary);
+    text-align: center;
+}
+
+.hero .content h1 {
+    font-size: 54px;
+    font-weight: var(--Bold);
+}
+
+.hero .content h3 {
+    font-size: 32px;
+    font-weight: var(--Medium);
+}
+
+/*Featured posts*/
+.featured .content {
+    display: flex;
+    gap: 20px;
+    flex-flow: row nowrap;
+}
+
+.featured .content .left .post,
+.featured .content .right .featured-posts {
+    height: 424px;
+}
+
+.featured .content .left a,
+.featured .content .right .featured-posts a,
+.latest .carousel .carousel-container a {
+    text-decoration: none;
+}
+
+.featured .content .left .post {
+    display: flex;
+    background-color: var(--secondary);
+    border-radius: 9px;
+}
+
+.featured .content .left .post img {
+    border-radius: 9px 0px 0px 9px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured .content .left .post .txt {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.featured .content .left .post .txt .f {
+    color: var(--primary);
+    font-weight: var(--Medium);
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.featured .content .left .post .txt h2 {
+    font-weight: var(--Bold);
+    font-size: 40px;
+    margin-top: 5px;
+    color: var(--tertiary);
+}
+
+.featured .content .left a .post .txt .author-date,
+.featured .content .right .featured-posts .post .author-date,
+.latest .carousel .carousel-container .card .author-date {
+    display: flex;
+    gap: 10px;
+    font-weight: var(--Medium);
+    font-size: 15px;
+    color: var(--hidden-txt);
+}
+
+.featured .content .left .post .txt .author-date {
+    margin-top: auto;
+    border-top: 1px solid var(--line-sep);
+}
+
+.featured .content .left .post .txt .author-date .name,
+.featured .content .left .post .txt .author-date,
+.featured .content .right .featured-posts .post .author-date .name {
+    color: var(--tertiary);
+}
+
+.featured .content .left .post,
+.featured .content .right .featured-posts {
+    filter: drop-shadow(var(--nav-shadow) 0px 5px 2px);
+}
+
+.featured .content .right .featured-posts {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border-radius: 9px;
+    padding: 0px 20px;
+}
+
+.featured .content .right .featured-posts .box-title {
+    border-bottom: 1px solid var(--line-sep);
+}
+
+.featured .content .right .featured-posts .box-title p {
+    font-size: 18px;
+}
+
+.featured .content .right .featured-posts .featured-posts-container:first-child {
+    border-bottom: solid 1px var(--line-sep);
+}
+
+.featured .content .right .featured-posts .post .author-date p {
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.featured .content .right .featured-posts .post h3 {
+    margin-top: 5px;
+    font-size: 26px;
+    margin-bottom: 40px;
+    color: var(--tertiary);
+}
+
+.loader-container {
+    margin-bottom: 20px;
+}
+
+/*Latest*/
+.latest {
+    margin-top: 80px;
+    color: var(--primary);
+    font-weight: var(--Medium);
+    margin-bottom: 80px;
+}
+
+.latest .sub-title {
+    font-size: 28px;
+}
+
+.latest .carousel {
+    position: relative;
+}
+
+.latest .carousel .arrow-prev,
+.latest .carousel .arrow-next {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 26px;
+    color: var(--primary);
+    border: none;
+    border-radius: 9px;
+    background-color: var(--light-grey);
+    filter: drop-shadow(var(--nav-shadow) 0px 5px 2px);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.latest .carousel .arrow-prev:hover,
+.latest .carousel .arrow-next:hover {
+    filter: brightness(0.9);
+}
+
+.latest .carousel .arrow-prev {
+    left: -20px;
+}
+
+.latest .carousel .arrow-next {
+    right: -20px;
+}
+
+.latest .carousel .carousel-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.latest .carousel .carousel-container a {
+    box-sizing: border-box;
+    flex: 0 0 32.5%;
+}
+
+.latest .carousel .carousel-container .card {
+    border-radius: 9px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 300px;
+}
+
+.latest .carousel .carousel-container .card h2 {
+    color: var(--secondary);
+    bottom: 0;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.latest .carousel .carousel-container .card .author-date {
+    border-top: 1px solid var(--secondary);
+}
+
+.latest .carousel .carousel-container .card .author-date p {
+    color: var(--hidden-txt-b);
+}
+
+.latest .carousel .carousel-container .card .author-date .name {
+    color: var(--secondary);
+}
+
+.featured .content .left a .post:hover h2,
+.featured .content .right .featured-posts a:hover h3 {
+    color: var(--primary);
+}
+
+.latest .carousel .carousel-container a:hover .card {
+    filter: brightness(0.9);
+}
+
+/*Transitions*/
+.featured .content .left a .post h2,
+.featured .content .right .featured-posts a h3,
+.latest .carousel .carousel-container a .card,
+.hero .content h1,
+.hero .content h3,
+.latest .carousel .carousel-container .card h2, .latest .carousel .arrow-prev, .latest .carousel .arrow-next, .latest .carousel button {
+    transition: 0.2s ease-in-out;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 1460px) {
+    .featured .content .right .featured-posts .post h3 {
+        margin-top: 5px;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .featured .content .left .post .txt h2 {
+        font-size: 35px;
+    }
+
+    .featured .content .right .featured-posts {
+        width: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .featured .content .right,
+    .latest .carousel .arrow-prev,
+    .latest .carousel .arrow-next,
+    .latest .carousel .carousel-pag {
+        display: none;
+    }
+
+    .latest .carousel .carousel-container {
+        flex-direction: column;
+    }
+
+    .latest .carousel .carousel-container .card {
+        height: auto;
+    }
+
+    .latest .carousel .carousel-container .card h2 {
+        font-size: 28px;
+    }
+
+    .hero .content h1 {
+        font-size: 49px;
+    }
+
+    .hero .content h3 {
+        font-size: 27px;
+    }
+}

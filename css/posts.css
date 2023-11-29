@@ -1,0 +1,142 @@
+.posts {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.posts a {
+    color: var(--tertiary);
+    text-decoration: none;
+    flex: 40%;
+}
+
+.posts .post {
+    display: flex;
+    background-color: var(--secondary);
+    border-radius: 9px;
+    height: 250px;
+}
+
+.posts .post img {
+    border-radius: 9px 0px 0px 9px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.posts .post .txt {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.posts .post .txt h2 {
+    font-size: 30px;
+}
+
+.posts .post .txt .author-date {
+    display: flex;
+    gap: 10px;
+    font-weight: var(--Medium);
+    font-size: 15px;
+    color: var(--hidden-txt);
+    margin-top: auto;
+    border-top: 1px solid var(--line-sep);
+}
+
+.posts .post .txt .author-date .name {
+    color: var(--tertiary);
+}
+
+.load-more_container {
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.load-more_container .load-more {
+    background-color: var(--primary);
+    font-weight: var(--Bold);
+    font-size: 18px;
+    border-radius: 50px;
+    width: 250px;
+    height: 60px;
+    text-transform: uppercase;
+    border: none;
+    color: var(--secondary);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.loader-container-more {
+    margin-top: 20px;
+}
+
+/*Hover*/
+.posts a:hover {
+    color: var(--primary);
+}
+
+/*Transitions*/
+.posts a, .posts .post .txt h2, .posts .post, .posts .post .txt .author-date, .posts .post img, .posts .post .txt {
+    transition: 0.2s ease-in-out;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 1900px) {
+    .posts .post .txt h2 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .posts .post .txt h2 {
+        font-size: 26px;
+    }
+
+    .posts .post .txt .author-date {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .posts .post .txt h2 {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .posts .post .txt h2 {
+        font-size: 20px;
+    }
+
+    .posts .post .txt .author-date {
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .posts .post .txt .author-date p {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .posts .post img {
+        display: none;
+    }
+
+    .posts .post {
+        height: 180px;
+    }
+
+    .posts .post .txt {
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+html {
+  /*Colors*/
+  --primary: #8000FF;
+  --secondary: #ffffff;
+  --bg: #F5F7F8;
+  --tertiary: #000000;
+  --error: #bd002c;
+  --error-bg: #bd002c14;
+  --nav-shadow: #00000015;
+  --light-grey: #F1F1F1;
+  --line-sep: #00000031;
+  --hidden-txt: #9B9B9B;
+  --hidden-txt-b: #C1C1C1;
+  --pagination: #D9D9D9;
+  --modal-bg: #000000e3;
+  --loader-bg: rgb(128, 128, 128);
+
+  /*Font weights*/
+  --Thin: 100;
+  --Light: 300;
+  --Regular: 400;
+  --Medium: 500;
+  --Bold: 700;
+  --Black: 900;
+
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  transition: 0.5s;
+  box-sizing: border-box;
+  background-color: var(--bg);
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1.page-title {
+  font-size: 54px;
+  font-weight: var(--Bold);
+  margin: 60px 0px;
+}
+
+.error {
+  color: var(--error);
+  font-weight: var(--Bold);
+}
+
+.loader-container, .loader-container-more {
+  position: relative;
+  background-color: var(--loader-bg);
+  border-radius: 9px;
+  color: var(--secondary);
+  padding: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--Bold);
+}
+
+.loader {
+  border: 4px solid var(--secondary);
+  border-top: 4px solid var(--primary);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*transitions*/
+
+
+/*Media queries*/
+@media only screen and (max-width: 1860px) {
+  body {
+    margin: 0px 90px;
+  }
+}
+
+@media only screen and (max-width: 1050px) { 
+  body {
+    margin: 0px 30px;
+  }
+}

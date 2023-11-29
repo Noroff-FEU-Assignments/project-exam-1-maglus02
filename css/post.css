@@ -1,0 +1,73 @@
+.author-date {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: var(--Medium);
+    font-size: 15px;
+    color: var(--hidden-txt);
+}
+
+.author-date .name {
+    color: var(--tertiary);
+}
+
+.content {
+    max-width: 1200px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .img {
+    max-width: 1000px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.content .img:hover {
+    filter: brightness(0.9);
+}
+
+.content p {
+    font-size: 30px;
+}
+
+.img_modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 110;
+    padding-top: 120px;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: var(--modal-bg);
+    cursor: pointer;
+}
+
+.modal_content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    animation-name: zoom-in;
+    animation-duration: 0.2s;
+    border-radius: 9px;
+    cursor: default;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/*transitions*/
+.content img {
+    transition: 0.2s ease-in-out;
+}
