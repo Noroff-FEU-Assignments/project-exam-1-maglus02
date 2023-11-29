@@ -73,6 +73,7 @@ header .mobile-menu .hamburger {
     cursor: pointer;
     background-color: var(--light-grey);
     z-index: 101;
+    color: var(--tertiary);
 }
 
 header .search .search-btn i,
