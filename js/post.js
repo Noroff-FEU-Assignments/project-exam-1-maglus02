@@ -21,8 +21,9 @@ async function fetchPost() {
 
         document.title = `${data.title.rendered} | Quantum Realm`;
         const metaDescriptionTag = document.querySelector('meta[name="description"]');
+        const descriptionText = `${data.title.rendered}` + ` | Quantum Realm`;
         if (metaDescriptionTag) {
-            metaDescriptionTag.setAttribute('content', data.title.rendered);
+            metaDescriptionTag.setAttribute('content', descriptionText);
         }
 
         const rawDate = new Date(`${data.date}`);
