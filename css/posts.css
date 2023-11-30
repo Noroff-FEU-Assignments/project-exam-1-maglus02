@@ -21,7 +21,7 @@
 
 .posts .post img {
     border-radius: 9px 0px 0px 9px;
-    width: 100%;
+    width: 50%;
     object-fit: cover;
 }
 
@@ -29,7 +29,7 @@
     margin: 0px 20px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    flex: 2;
 }
 
 .posts .post .txt h2 {
@@ -83,7 +83,7 @@
 }
 
 /*Transitions*/
-.posts a, .posts .post .txt h2, .posts .post, .posts .post .txt .author-date, .posts .post img, .posts .post .txt {
+.posts a, .posts .post .txt h2, .posts .post, .posts .post .txt .author-date, .posts .post img, .posts .post .txt, .posts {
     transition: 0.2s ease-in-out;
 }
 
