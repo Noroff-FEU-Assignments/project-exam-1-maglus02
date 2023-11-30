@@ -43,10 +43,10 @@
             </ul>
         </nav>
         <div class="search">
-            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="search-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="mobile-menu">
-            <button class="hamburger">
+            <button class="hamburger" aria-label="Menu button">
                 <i class="menuIcon fa-solid fa-bars"></i>
                 <i class="closeIcon fa-solid fa-xmark"></i>
             </button>
@@ -60,16 +60,16 @@
             <div class="contact-form">
                 <h2>Contact Form</h2>
                 <form onsubmit="return validateForm()">
-                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="name" name="name" placeholder="Name" aria-label="Name input">
                     <span id="nameError" class="form-error"></span>
 
-                    <input type="text" id="email" name="email" placeholder="Email address">
+                    <input type="text" id="email" name="email" placeholder="Email address" aria-label="Email address input">
                     <span id="emailError" class="form-error"></span>
 
-                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" aria-label="Subject input">
                     <span id="subjectError" class="form-error"></span>
 
-                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                    <textarea id="message" name="message" placeholder="Message" aria-label="Message input"></textarea>
                     <span id="messageError" class="form-error"></span>
 
                     <input id="submit" type="submit" value="Send">
@@ -86,9 +86,9 @@
             <a href="#">Terms & Conditions</a>
         </div>
         <div id="social-media">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook" aria-label="Facebook button"></i>
+            <i class="fa-brands fa-instagram" aria-label="Instagram button"></i>
+            <i class="fa-brands fa-x-twitter" aria-label="X/Twitter button"></i>
         </div>
     </footer>
     <script src='js/nav.js'></script>

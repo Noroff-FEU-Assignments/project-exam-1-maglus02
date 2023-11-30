@@ -43,16 +43,17 @@
             </ul>
         </nav>
         <div class="search">
-            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="search-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="mobile-menu">
-            <button class="hamburger">
+            <button class="hamburger" aria-label="Menu button">
                 <i class="menuIcon fa-solid fa-bars"></i>
                 <i class="closeIcon fa-solid fa-xmark"></i>
             </button>
         </div>
     </header>
     <main>
+        <h1 class="page-title">Posts</h1>
         <div class="posts">
             <div class="loader-container">
                 <div class="loader"></div>
@@ -64,7 +65,7 @@
                 <div class="loader"></div>
                 Fetching more posts...
             </div>
-            <button class="load-more" onclick="fetchMorePosts()">Load more</button>
+            <button class="load-more" onclick="fetchMorePosts()" aria-label="Load more posts button">Load more</button>
         </div>
     </main>
     <footer>
@@ -76,9 +77,9 @@
             <a href="#">Terms & Conditions</a>
         </div>
         <div id="social-media">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook" aria-label="Facebook button"></i>
+            <i class="fa-brands fa-instagram" aria-label="Instagram button"></i>
+            <i class="fa-brands fa-x-twitter" aria-label="X/Twitter button"></i>
         </div>
     </footer>
     <script src='js/nav.js'></script>
