@@ -28,6 +28,15 @@
     filter: brightness(0.9);
 }
 
+.content figure {
+    margin-left: 0px;
+}
+
+.content figure img {
+    width: 100%;
+    height: auto;
+}
+
 .content p {
     font-size: 30px;
 }
