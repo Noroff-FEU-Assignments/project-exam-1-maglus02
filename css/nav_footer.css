@@ -56,6 +56,10 @@ header .nav {
     border-bottom: 2px solid transparent;
 }
 
+.nav .ul .active {
+    border-color: var(--primary);
+}
+
 .nav .ul li {
     padding: 0px 20px;
 }
