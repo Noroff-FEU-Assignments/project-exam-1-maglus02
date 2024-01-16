@@ -1,6 +1,6 @@
 # Project Exam 1
 
-![image](https://rimgo.kling.gg/pvOzhaJ.png)
+![image](https://i.imgur.com/pvOzhaJ.png)
 
 In the Project Exam 1, we used everything we learned during the first year of studies and put it into a new web page.
 
